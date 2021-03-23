@@ -13,6 +13,10 @@
 		D15D969725D44D6200A2B04D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D15D969625D44D6200A2B04D /* Assets.xcassets */; };
 		D15D969A25D44D6200A2B04D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D15D969925D44D6200A2B04D /* Preview Assets.xcassets */; };
 		D15D969D25D44D6200A2B04D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15D969B25D44D6200A2B04D /* LaunchScreen.storyboard */; };
+		D15D96A725D577D000A2B04D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D96A625D577CF00A2B04D /* NetworkManager.swift */; };
+		D15D96A925D57A6900A2B04D /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D96A825D57A6900A2B04D /* PostData.swift */; };
+		D15D96AE25D6AFDC00A2B04D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D96AD25D6AFDC00A2B04D /* DetailView.swift */; };
+		D15D96B025D6B60300A2B04D /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D96AF25D6B60300A2B04D /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		D15D969925D44D6200A2B04D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D15D969C25D44D6200A2B04D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D15D969E25D44D6200A2B04D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D15D96A625D577CF00A2B04D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D15D96A825D57A6900A2B04D /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		D15D96AD25D6AFDC00A2B04D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D15D96AF25D6B60300A2B04D /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,8 @@
 			children = (
 				D15D969025D44D5C00A2B04D /* AppDelegate.swift */,
 				D15D969225D44D5C00A2B04D /* SceneDelegate.swift */,
-				D15D969425D44D5C00A2B04D /* ContentView.swift */,
+				D15D96AA25D6AF5F00A2B04D /* Views */,
+				D15D96A525D5778E00A2B04D /* Models */,
 				D15D969625D44D6200A2B04D /* Assets.xcassets */,
 				D15D969B25D44D6200A2B04D /* LaunchScreen.storyboard */,
 				D15D969E25D44D6200A2B04D /* Info.plist */,
@@ -73,6 +82,25 @@
 				D15D969925D44D6200A2B04D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D15D96A525D5778E00A2B04D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D15D96A625D577CF00A2B04D /* NetworkManager.swift */,
+				D15D96A825D57A6900A2B04D /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D15D96AA25D6AF5F00A2B04D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D15D969425D44D5C00A2B04D /* ContentView.swift */,
+				D15D96AD25D6AFDC00A2B04D /* DetailView.swift */,
+				D15D96AF25D6B60300A2B04D /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15D96A925D57A6900A2B04D /* PostData.swift in Sources */,
+				D15D96AE25D6AFDC00A2B04D /* DetailView.swift in Sources */,
+				D15D96A725D577D000A2B04D /* NetworkManager.swift in Sources */,
 				D15D969125D44D5C00A2B04D /* AppDelegate.swift in Sources */,
 				D15D969325D44D5C00A2B04D /* SceneDelegate.swift in Sources */,
 				D15D969525D44D5C00A2B04D /* ContentView.swift in Sources */,
+				D15D96B025D6B60300A2B04D /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
