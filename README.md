@@ -1,4 +1,4 @@
 # Hackernews
-Hackernews combinator app.
-So here I implemented MVC pattern, take data from Algolia API and reach it by JSON. 
-Also, here I implemented in-app browser to open the latest news directly in another screen.
+Hackernews combinator app created with SwiftUI.
+So here I implemented models-views pattern, take data from Algolia API and reach it by JSON. 
+Also, here I implemented in-app browser(WebKit) to open the latest news directly in another screen.
