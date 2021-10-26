@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3625F8D3272899B600D24B17 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625F8D2272899B600D24B17 /* Story.swift */; };
+		3625F8D527289AAC00D24B17 /* HackerNewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625F8D427289AAC00D24B17 /* HackerNewsAPI.swift */; };
 		D15D969125D44D5C00A2B04D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D969025D44D5C00A2B04D /* AppDelegate.swift */; };
 		D15D969325D44D5C00A2B04D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D969225D44D5C00A2B04D /* SceneDelegate.swift */; };
 		D15D969525D44D5C00A2B04D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D969425D44D5C00A2B04D /* ContentView.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3625F8D2272899B600D24B17 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		3625F8D427289AAC00D24B17 /* HackerNewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsAPI.swift; sourceTree = "<group>"; };
 		D15D968D25D44D5C00A2B04D /* HackerNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15D969025D44D5C00A2B04D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D15D969225D44D5C00A2B04D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				D15D969B25D44D6200A2B04D /* LaunchScreen.storyboard */,
 				D15D969E25D44D6200A2B04D /* Info.plist */,
 				D15D969825D44D6200A2B04D /* Preview Content */,
+				3625F8D2272899B600D24B17 /* Story.swift */,
+				3625F8D427289AAC00D24B17 /* HackerNewsAPI.swift */,
 			);
 			path = HackerNews;
 			sourceTree = "<group>";
@@ -181,6 +187,8 @@
 				D15D969325D44D5C00A2B04D /* SceneDelegate.swift in Sources */,
 				D15D969525D44D5C00A2B04D /* ContentView.swift in Sources */,
 				D15D96B025D6B60300A2B04D /* WebView.swift in Sources */,
+				3625F8D3272899B600D24B17 /* Story.swift in Sources */,
+				3625F8D527289AAC00D24B17 /* HackerNewsAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
