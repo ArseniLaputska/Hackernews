@@ -9,7 +9,8 @@
 import SwiftUI
 
 struct NewsView: View {
-  @ObservedObject var viewModel = NewsViewModel()
+  @ObservedObject var viewModel = NewsViewModelID()
+  @State var shouldPresent: Bool = true
   
   private let timer = Timer.publish(every: 3, on: .main, in: .common)
     .autoconnect()
@@ -17,34 +18,40 @@ struct NewsView: View {
   
     var body: some View {
       VStack {
-        Text("HackerNews")
-          .font(.largeTitle)
-          .padding()
-          .background(Color.blue)
-        
-        Picker("", selection: $viewModel.indexEndpoint) {
-          Text("News").tag(0)
-          Text("Top news").tag(1)
-          Text("Best news").tag(2)
-        }
-        .background(Color.blue)
-        .pickerStyle(SegmentedPickerStyle())
-        
-        List {
-          ForEach(self.viewModel.stories) { story in
-            HStack {
-              BadgeTime(time: story.time)
-              VStack {
-                Text(story.title)
-                  .font(.body)
-                  .lineLimit(2)
-                PostedBy(time: story.time, currentDate: self.viewModel.currentDate)
-              }
-            }
+        VStack {
+          Text("HackerNews")
+            .font(.largeTitle)
             .padding()
-          }
+            .background(Color.blue)
+            .opacity(0.7)
         }
-        .onReceive(timer) { self.viewModel.currentDate = $0 }
+        VStack {
+          Picker("", selection: $viewModel.indexEndpoint) {
+            Text("News").tag(0)
+            Text("Top news").tag(1)
+            Text("Best news").tag(2)
+          }
+          .background(Color.blue)
+          .pickerStyle(SegmentedPickerStyle())
+          
+          List {
+            ForEach(self.viewModel.stories) { story in
+              HStack {
+                BadgeTime(time: story.time)
+                VStack {
+                  Text(story.title)
+                    .font(.body)
+                    .lineLimit(2)
+                  PostedBy(time: story.time, currentDate: self.viewModel.currentDate)
+                }
+              }
+              .padding()
+              .sheet(isPresented: self.$shouldPresent) {DetailView(url: URL(string: story.url))}
+            }
+          }
+          .background(Color.gray)
+          .onReceive(timer) { self.viewModel.currentDate = $0 }
+        }
       } // VStack
     }
 }

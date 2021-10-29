@@ -10,7 +10,7 @@ import SwiftUI
 
 struct DetailView: View {
     
-    let url: String?
+    let url: URL?
     
     var body: some View {
         WebView(urlString: url)
@@ -19,6 +19,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(url: "https://www.google.com")
+      DetailView(url: URL(string:"https://www.google.com")!)
     }
 }

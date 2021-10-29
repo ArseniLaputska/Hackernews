@@ -77,6 +77,15 @@
 			path = SupportedView;
 			sourceTree = "<group>";
 		};
+		367E4354272C4D6B00A29325 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3625F8D62728B40E00D24B17 /* NewsViewModel.swift */,
+				36507F932728C6F700ADDF17 /* NewsViewModelID.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		856C570A35FEE316102299A0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +118,7 @@
 			children = (
 				D15D969025D44D5C00A2B04D /* AppDelegate.swift */,
 				D15D969225D44D5C00A2B04D /* SceneDelegate.swift */,
+				367E4354272C4D6B00A29325 /* ViewModels */,
 				D15D96AA25D6AF5F00A2B04D /* Views */,
 				D15D96A525D5778E00A2B04D /* Model */,
 				36507F952728C72900ADDF17 /* Network */,
@@ -116,8 +126,6 @@
 				D15D969B25D44D6200A2B04D /* LaunchScreen.storyboard */,
 				D15D969E25D44D6200A2B04D /* Info.plist */,
 				D15D969825D44D6200A2B04D /* Preview Content */,
-				3625F8D62728B40E00D24B17 /* NewsViewModel.swift */,
-				36507F932728C6F700ADDF17 /* NewsViewModelID.swift */,
 			);
 			path = HackerNews;
 			sourceTree = "<group>";
